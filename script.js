@@ -71,7 +71,7 @@ guestScore.textContent = 0
 function guestUndo(){
 guestPts = guestPts - 1;
 guestScore.textContent = guestPts
-}   
+} 
 function guestFoulOne(){
 guestFoulPts = guestFoulPts - 1;
 guestFoulScore.textContent = guestFoulPts
@@ -79,4 +79,4 @@ guestFoulScore.textContent = guestFoulPts
 function guestFoulUndo(){
 guestFoulPts = guestFoulPts + 1
 guestFoulScore.textContent = guestFoulPts
-}  
+} 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Basketball Scoring</title>
+   </head>
+
+   <body>
+      <main class="head">
+         <h1>Basketball Scoreboard</h1>
+         <div class="scoreboard">
+            <div class="team">
+               <div class="text">HOME</div>
+                  <div class="score">
+                     <p class="pts" id="home-score">0</p>
+                     <p class="pts-shadow">000</p>
+                  </div> 
+                  <div class="points">
+                     <button onclick="homeOnePoint()">1pt</button>
+                     <button onclick="homeTwoPoints()">2pts</button>
+                     <button onclick="homeThreePoints()">3pts</button>
+                     <hr>
+                     <button onclick="homeUndo()">Undo</button>
+                     <button onclick="homeReset()">Reset</button> 
+                  </div>
+                  <div class="text">FOUL</div>
+                     <div id="home-foul">
+                        <p class="pts" id="home-foul-score">000</p>
+                        <p class="pts-shadow">000</p>
+                     </div>
+                     <div class="one-point">
+                        <button onclick=" homeFoulOne()">point</button>
+                        <button onclick="homeFoulUndo()">Undo</button>
+                     </div>
+            </div>
+            <div class="team">
+               <div class="text">PERIOD</div>
+                  <div id="period">
+                     <p class="pd" id="period-score">0</p>
+                     <p class="pts-shadow">0</p>
+                  </div>
+                  <div class="one-point">
+                     <button onclick="periodPoint()">
+                        <i class="arrow left"></i>
+                     </button>
+                     <button onclick="periodReset()">
+                        <i class="arrow right"></i>
+                     </button>
+                  </div>
+            </div>
+            <div class="team">
+               <div class="text">GUEST</div>
+                  <div class="score">
+                     <p class="pts" id="guest-score">0</p>
+                     <p class="pts-shadow">000</p> 
+                  </div>
+                  <div class="points">
+                     <button onclick="guestOnePoint()">1pt</button>
+                     <button onclick="guestTwoPoints()">2pts</button>
+                     <button onclick="guestThreePoints()">3pts</button>
+                     <hr>
+                     <button onclick="guestUndo()">Undo</button>
+                     <button onclick="guestReset()">Reset</button>
+                  </div>
+                  <div class="text">FOUL</div>
+                     <div id="guest-foul">
+                        <p class="pts" id="guest-foul-score">000</p>
+                        <p class="pts-shadow">000</p>
+                     </div>
+                  <div class="one-point">
+                     <button onclick="guestFoulOne()">point</button>
+                     <button onclick="guestFoulUndo()">Undo</button>
+                  </div>
+            </div> 
+         </div>
+      </main>
+      <script src="script.js"></script>
+   </body>
+</html>
