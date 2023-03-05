@@ -1,82 +1,84 @@
 /*HOME*/
 let homePts = 0;
-let homeScore = document.getElementById("home-score");
+let homeScore = document.getElementById("homepts");
 let homeFoulPts = 0;
-let homeFoulScore = document.getElementById("home-foul-score");
+let homeFoulScore = document.getElementById("hmfoulpts");
 
-function homeOnePoint(){
-homePts = homePts + 1;
+function homeOne(){
+homePts += 1;
 homeScore.textContent = homePts
 }
-function homeTwoPoints(){
-homePts = homePts + 2;
+function homeTwo(){
+homePts +=2;
 homeScore.textContent = homePts
 }
-function homeThreePoints(){
-homePts = homePts + 3;
+function homeThree(){
+homePts += 3;
 homeScore.textContent = homePts
 }
-function homeReset(){
+function homeRes(){
 homePts = 0
 homeScore.textContent = 0
 }
-function homeUndo(){
-homePts = homePts - 1;
+function homeUn(){
+homePts -= 1;
 homeScore.textContent = homePts
 }
-function homeFoulOne(){
-homeFoulPts = homeFoulPts - 1;
+
+function hmBtnPts(){
+homeFoulPts -= 1;
 homeFoulScore.textContent = homeFoulPts
 }
-function homeFoulUndo(){
-homeFoulPts = homeFoulPts + 1
+function hmBtnUndo(){
+homeFoulPts += 1
 homeFoulScore.textContent = homeFoulPts
 }
 
 /*PERIOD*/
 let pdPts = 0;
-let pdScore = document.getElementById("period-score");
+let pdScore = document.getElementById("pdpts");
 
-function periodPoint(){
-pdPts = pdPts + 1;
-pdScore.textContent = pdPts
+function btnRight(){
+pdPts += 1;
+pdScore.textContent = "00" + pdPts
 }
-function periodReset(){
-pdPts = pdPts - 1
-pdScore.textContent = pdPts
+function btnLeft(){
+pdPts -= 1
+pdScore.textContent = "00" + pdPts
 }
 
 /*GUEST*/
 let guestPts = 0;
-let guestScore = document.getElementById("guest-score");
+let guestScore = document.getElementById("gstpts");
 let guestFoulPts = 0;
-let guestFoulScore = document.getElementById("guest-foul-score");
+let guestFoulScore = document.getElementById("gstfoulpts");
 
-function guestOnePoint(){
-guestPts = guestPts + 1;
+function gstOne(){
+guestPts += 1;
 guestScore.textContent = guestPts
 }
-function guestTwoPoints(){
-guestPts = guestPts + 2;
+function gstTwo(){
+guestPts += 2;
 guestScore.textContent = guestPts
 }
-function guestThreePoints(){
-guestPts = guestPts + 3;
+function gstThree(){
+guestPts += 3;
 guestScore.textContent = guestPts
 }
-function guestReset(){
+function gstRes(){
 guestPts = 0
 guestScore.textContent = 0
 }
-function guestUndo(){
-guestPts = guestPts - 1;
+function gstUn(){
+guestPts -= 1;
 guestScore.textContent = guestPts
 } 
-function guestFoulOne(){
-guestFoulPts = guestFoulPts - 1;
+
+function gstBtnPts(){
+guestFoulPts -= 1;
 guestFoulScore.textContent = guestFoulPts
 }
-function guestFoulUndo(){
-guestFoulPts = guestFoulPts + 1
+function gstBtnUndo(){
+guestFoulPts += 1
 guestFoulScore.textContent = guestFoulPts
 } 
