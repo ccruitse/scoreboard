@@ -13,17 +13,22 @@ html, body {
 }
 
 body {
-    background: #202528;
+    background: url(image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
-    color:whitesmoke;
+    color:#ff9e00;
     font-family:Georgia, serif;
     font-size: 3em;
     text-align: center;
     margin-bottom: 0.5em;
+    text-shadow: 3px 3px #240046;
 }
 
 h2 {
@@ -182,7 +187,8 @@ transform: rotate(135deg);
     h1 {
         font-size: 4em;
         margin: auto;
-        margin-bottom: 0.2em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
     }
     h2 {
         font-size: 3em;
